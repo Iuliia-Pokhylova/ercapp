@@ -1,0 +1,35 @@
+<h2>All Customers</h2>
+
+<table class="table table-hover">
+    <tr>
+        <th>
+            #
+        </th>
+        <th>
+            ABCOUNT
+        </th>
+        <th>
+            FIO
+        </th>
+        <th>
+            DOLG
+        </th>
+        <th>DATE</th>
+    </tr>
+    <tr ng-repeat="principal in principals">
+        <td>{{$index+1}}</td>
+        <td>
+            {{principal.abcount}}
+        </td>
+        <td>
+            {{principal.fio}}
+        </td>
+        <td>
+            {{principal.summ_dolg}}
+        </td>
+        <td>
+            {{principal.data_d |date:'medium'}}
+        </td>
+
+    </tr>
+</table>
